@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "TextStyle"
-  s.version      = "1.4.3"
+  s.version      = "1.5"
   s.summary      = "TextStyle provides easier management of dynamic font sizing in iOS."
   s.description  = <<-EOS
   TextStyle easier management of dynamic font sizing in iOS. Also adds RxSwift bindings for
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "License" }
   s.author             = { "Ivan Bruel" => "ivan.bruel@gmail.com" }
   s.social_media_url   = "http://twitter.com/ivanbruel"
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
   s.source       = { :git => "https://github.com/ivanbruel/TextStyle.git", :tag => s.version }
   s.default_subspec = "Core"
 
@@ -30,8 +30,8 @@ Pod::Spec.new do |s|
 
   s.subspec "RxSwift" do |ss|
     ss.source_files = "TextStyle/Classes/RxSwift/*.swift"
-    ss.dependency "RxSwift", "~> 4"
-    ss.dependency "RxCocoa", "~> 4"
+    ss.dependency "RxSwift", "~> 5"
+    ss.dependency "RxCocoa", "~> 5"
     ss.dependency "TextStyle/Core"
   end
 
